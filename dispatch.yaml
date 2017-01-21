@@ -1,0 +1,9 @@
+dispatch:
+  - url: "cookomatic.co/*"
+    module: default
+
+  - url: "api.cookomatic.co/*"
+    module: api
+
+  - url: "app.cookomatic.co/*"
+    module: app
