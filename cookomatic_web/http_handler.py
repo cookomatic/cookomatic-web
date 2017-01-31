@@ -1,6 +1,7 @@
 """Handles the HTTP routing."""
 
 import flask
+from flask import render_template
 
 APP = flask.Flask(__name__)
 APP.config['DEBUG'] = True
@@ -14,10 +15,10 @@ def ping():
     return 'pong'
 
 
-@APP.route('/hello')
-def hello():
+@APP.route('/')
+def home_page():
     """Sample web handler to see if the server is alive."""
-    return 'World!'
+    return render_template('index.html')
 
 
 @APP.errorhandler(404)

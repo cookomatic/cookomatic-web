@@ -8,7 +8,11 @@ handlers:
   script: google.appengine.ext.admin.application
   login: admin
 
-- url: .*
+- url: /assets/(.*)
+  static_files: cookomatic_web/assets/\1
+  upload: cookomatic_web/assets/.*
+
+- url: /.*
   script: cookomatic_web.http_handler.APP
   secure: always
 
