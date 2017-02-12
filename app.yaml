@@ -13,7 +13,7 @@ handlers:
   upload: cookomatic_web/assets/.*
 
 - url: /.*
-  script: cookomatic_web.http_handler.APP
+  script: cookomatic_web.http_handler.app
   secure: always
 
 libraries:
