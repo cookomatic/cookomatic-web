@@ -13,6 +13,6 @@ def home():
 
 
 @app.errorhandler(404)
-def page_not_found(error):
-    """Return a custom 404 error."""
-    return 'Sorry, nothing at this URL. Error msg: %s' % error, 404
+def page_not_found(_):
+    """Return a 404 error."""
+    return '', 404

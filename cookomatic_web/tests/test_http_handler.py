@@ -15,6 +15,9 @@ class TestHttpHandler(TestCase):
         self.client.get('/')
         self.assert_template_used('index.html')
 
+    def test_404(self):
+        response = self.client.get('/asdf')
+        self.assert404(response)
 
 if __name__ == '__main__':
     unittest.main()
