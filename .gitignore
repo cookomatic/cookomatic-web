@@ -72,7 +72,7 @@ target/
 # pyenv
 .python-version
 
-# celery beat schedule file
+# celery beat steps file
 celerybeat-schedule
 
 # dotenv
